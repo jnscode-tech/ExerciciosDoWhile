@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Centralização geral da página */
+body{
+    min-height: 100vh;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título */
+h1{
+    color: blue;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Container principal */
+.container{
+    position: relative; /* <<< ESSENCIAL */
+    background-color: bisque;
+    padding: 80px;
+    border-radius: 12px;
+    width: 850px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagem{
+   
+ width: 100%; /* Ocupa 100% da largura do container */
+  height: auto; /* Altura se ajusta automaticamente *//
+}
+
+
+/* Conteúdo acima da imagem */
+.botoes{
+    position: relative; /* <<< garante ficar acima */
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    width: 49%;
+}
+
+/* Botões */
+.botoes button{
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: rgb(10, 10, 10);
+    width: 100%;
+}
+
+/* Cores */
+.cadastro{
+    background-color:#4169E1;
+}
+
+.votacao{
+    background-color: green;
+}
+
+.resultado{
+    background-color: darkorange;
+}
+
+/* Hover */
+.botoes button:hover{
+    opacity: 0.85;
+}
