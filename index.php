@@ -6,32 +6,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-   <h1> Exercícios </h1> <br><br>
+ 
 
 <div class="container">
- 
+
+    <div class="titulo">
+     <h1> Exercícios <br> DO WHILE</h1> <br>
+    </div>
+  
     <div class="botoes">
   
     <a href="exercicio01.php">
-        <button class="ex01"><strong>EX 01</strong></button>
+        <button ><strong>EX 01</strong></button>
     </a>
 
     <a href="exercicio02.php">
-        <button class="ex01"><strong>EX 02</strong></button>
+        <button><strong>EX 02</strong></button>
     </a>
 
     <a href="exercicio03.php">
-        <button class="ex01"><strong>EX 03</strong></button>
+        <button><strong>EX 03</strong></button>
     </a>
 
 
     <a href="exercicio04.php">
-        <button class="ex04"><strong>EX 04</strong></button>
+        <button><strong>EX 04</strong></button>
     </a>
 
-
-
+    <a href="exercicio05.php">
+        <button><strong>EX 05</strong></button>
+    </a>
 
    </div>
 

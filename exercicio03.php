@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Números - Progressão</title>
+    <title>Números - Regressão</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -35,15 +35,14 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $n = ($_POST["valor"]);
-    $i = 1;
 
-    echo "<h3>Número do 1 a $n</h3>";
-      
+    echo "<h3>Número de $n a 0 </h3>";
 
     do {
-         echo "$i" ."<br>";
-        $i++;
-    } while ($i <= $n);
+        echo "$n" ."<br>";
+        
+        $n--;
+    } while ($n>=0);
 }
 ?>
 

@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Números - Progressão</title>
+    <title> Fatorial</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -13,12 +13,12 @@
 <div class="container-exercicios">
 <form method="post">
 
-    <label>Digite um valor:</label><br><br>
+    <label>Digite um valor para saber o fatorial: </label><br><br>
     <input type="number" name="valor" required><br><br>
     
     
     <div class="botoes">
-    <button type="submit"><strong> EXIBIR </strong></button>
+    <button type="submit"><strong> N! </strong></button>
 
      <button type="button" onclick="window.location.href='index.php'"><strong>
         VOLTAR</strong>
@@ -34,16 +34,26 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $n = ($_POST["valor"]);
-    $i = 1;
+    $n = $_POST["valor"];
+    $valorDigitado =$n;
+    $fatorial =1;
 
-    echo "<h3>Número do 1 a $n</h3>";
-      
+    if ($n < 0) {
+        echo "Não existe fatorial de número negativo.";
+    } elseif ($n == 0) {
+        echo "0! = 1";
+    } else {
+    
+do {
 
-    do {
-         echo "$i" ."<br>";
-        $i++;
-    } while ($i <= $n);
+   $fatorial = $fatorial * $n; // $fatorial *= $n; 
+    $n--;
+    
+} while ($n > 1);
+
+echo "O fatorial do ".$valorDigitado ." é: ".$fatorial;
+
+    }
 }
 ?>
 
